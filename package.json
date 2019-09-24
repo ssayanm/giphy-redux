@@ -12,11 +12,11 @@
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.11.1"
   },
-  "homepage":"https://ssayanm.github.io/giphy-redux/",
+  "homepage": "https://ssayanm.github.io/giphy-redux/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
