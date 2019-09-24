@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9459676295e5af98abc3ae145ba5450e",
+    "revision": "49489e0b364b3a59af28a61234030cd1",
     "url": "/giphy-redux/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/giphy-redux/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "cb368fc476a0ba0b857b",
+    "revision": "7b04c29991d1938151bb",
     "url": "/giphy-redux/static/css/main.8247d3dc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/giphy-redux/static/js/2.a0d08cb4.chunk.js"
   },
   {
-    "revision": "cb368fc476a0ba0b857b",
-    "url": "/giphy-redux/static/js/main.0c8788f8.chunk.js"
+    "revision": "7b04c29991d1938151bb",
+    "url": "/giphy-redux/static/js/main.f537abb6.chunk.js"
   },
   {
     "revision": "ed6d775fb2815dbe6848",
