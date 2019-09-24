@@ -2,6 +2,7 @@
   "name": "giphysearch",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ssayanm.github.io/giphy-redux/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
@@ -13,7 +14,6 @@
     "redux-thunk": "^2.3.0",
     "tachyons": "^4.11.1"
   },
-  "homepage": "https://ssayanm.github.io/giphy-redux/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",

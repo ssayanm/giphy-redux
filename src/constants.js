@@ -1,4 +1,4 @@
-export const API_URL = 'http://api.giphy.com/v1/gifs/search?q=';
+export const API_URL = 'https://api.giphy.com/v1/gifs/search?q=';
 export const API_KEY = '&api_key=vymc5XlA7eUV2Idx6Qv6nz61ltpL16sT';
 export const LIMIT ='&limit=10'
 export const DEFAULT_QUERY = 'ryan';
