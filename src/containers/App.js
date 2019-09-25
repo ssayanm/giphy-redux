@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import GifList from '../components/GifList';
-//import DisplayGif from '../components/DisplayGif';
+import DisplayGif from '../components/DisplayGif';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
@@ -12,7 +12,8 @@ import './App.css';
 const mapStateToProps = state => {
   return {
     searchField: state.searchGifs.searchField,
-    gifs: state.requestGifs.gifs,
+    fgifs: state.requestGifs.fgifs,
+    gifs: state.searchGifs.gifs,
     isPending: state.requestGifs.isPending,
     error: state.requestGifs.error
   }
@@ -27,19 +28,26 @@ const mapDispatchToProps = dispatch => {
 }
 
 class App extends Component {
-componentDidMount(){
+  componentDidMount(){
         this.props.onRequestGifs();
   }
 
   render(){  
-    const { onSearchChange, gifs } = this.props;
-        return(
+    const { onSearchChange, gifs, fgifs } = this.props;
+        return !gifs.length ?
+      (<div className="App tc">
+        <h1 className="f1">Gif Search Engine</h1> 
+      <SearchBox searchChange={onSearchChange}/>
+      <Scroll>
+      <DisplayGif fgifs={fgifs}/>
+      </Scroll>
+      </div>
+      ) : (
         <div className="App tc">
           <h1 className="f1">Gif Search Engine</h1>
           <SearchBox searchChange={onSearchChange}/>
           <Scroll>
             <ErrorBoundary>
-            
               <GifList gifs={gifs}/>
             </ErrorBoundary>  
           </Scroll>
