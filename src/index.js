@@ -7,11 +7,11 @@ import thunkMiddleware from 'redux-thunk';
 import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
-import { searchGifs, requestGifs } from './reducers';
+import { searchGifs } from './reducers';
 import 'tachyons';
 
 const logger = createLogger();
-const rootReducer = combineReducers({ searchGifs, requestGifs })
+const rootReducer = combineReducers({ searchGifs })
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
