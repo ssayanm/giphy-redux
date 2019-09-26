@@ -7,7 +7,6 @@ import ErrorBoundary from '../components/ErrorBoundary';
 import { setSearchField } from '../actions';
 import './App.css';
 
-
 const mapStateToProps = state => {
   return {
     gifs: state.searchGifs.gifs,
